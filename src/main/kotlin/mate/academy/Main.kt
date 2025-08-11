@@ -1,5 +1,14 @@
 package mate.academy
 
+import mate.academy.service.ColorSupplier
+import mate.academy.service.FigureSupplier
+
 fun main() {
-    // draw all figures here
+    val colorSupplier = ColorSupplier()
+    val figureSupplier = FigureSupplier(colorSupplier)
+    val figures = listOf(
+        figureSupplier.getRandomFigure(), figureSupplier.getRandomFigure(),
+        figureSupplier.getRandomFigure(), figureSupplier.getDefaultFigure()
+    )
+    figures.forEach {it.draw()}
 }
