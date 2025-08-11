@@ -8,10 +8,12 @@ class Rectangle(
 
     override fun draw() {
         println(
-            "Figure: rectangle, area:${calculateArea()}. units, "
-                    + "width: $width units, "
-                    + "height: $height units, "
-                    + "color: $color"
+            """
+                Figure: rectangle, area:${calculateArea()}. units, 
+                width: $width units, 
+                height: $height units, 
+                color: $color
+            """.trimIndent()
         )
     }
 

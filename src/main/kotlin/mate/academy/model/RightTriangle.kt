@@ -8,10 +8,10 @@ class RightTriangle(
 
     override fun draw() {
         println(
-            "Figure: right triangle, area:${calculateArea()}. units, "
-                    + "firstLeg: $firstLeg units, "
-                    + "secondLeg: $secondLeg units, "
-                    + "color: $color"
+            """
+                Figure: right triangle, area:${calculateArea()}. units,
+                firstLeg: $firstLeg units, secondLeg: $secondLeg units, color: $color
+            """.trimIndent()
         )
     }
 
