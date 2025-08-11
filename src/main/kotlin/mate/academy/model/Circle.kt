@@ -6,7 +6,7 @@ class Circle(color: Color, private val radius: Int) : Figure(color){
                 + "color: $color")
     }
 
-    override fun calculateArea(): Int {
-        return (Math.PI * radius * radius).toInt();
+    override fun calculateArea(): Double {
+        return Math.PI * radius * radius
     }
 }

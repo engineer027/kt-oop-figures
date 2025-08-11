@@ -7,7 +7,8 @@ fun main() {
     val colorSupplier = ColorSupplier()
     val figureSupplier = FigureSupplier(colorSupplier)
     val figures = listOf(
-        figureSupplier.getRandomFigure(), figureSupplier.getRandomFigure(),
+        figureSupplier.getRandomFigure(), figureSupplier.getDefaultFigure(),
+        figureSupplier.getRandomFigure(), figureSupplier.getDefaultFigure(),
         figureSupplier.getRandomFigure(), figureSupplier.getDefaultFigure()
     )
     figures.forEach {it.draw()}

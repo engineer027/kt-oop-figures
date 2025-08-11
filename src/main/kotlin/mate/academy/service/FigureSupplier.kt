@@ -14,21 +14,21 @@ const val MAX_FIGURE_BASE_SIZE = 100
 
 class FigureSupplier(private val colorSupplier: ColorSupplier) {
     private val factories: List<(ColorSupplier) -> Figure> = listOf(
-        { Circle(it.getRandomColor(), Random.nextInt(MAX_FIGURE_BASE_SIZE)) },
+        { Circle(it.getRandomColor(), Random.nextInt(1, MAX_FIGURE_BASE_SIZE)) },
         {
             IsoscelesTrapezoid(
-                it.getRandomColor(), Random.nextInt(MAX_FIGURE_BASE_SIZE),
-                Random.nextInt(MAX_FIGURE_BASE_SIZE), Random.nextInt(MAX_FIGURE_BASE_SIZE)
+                it.getRandomColor(), Random.nextInt(1, MAX_FIGURE_BASE_SIZE),
+                Random.nextInt(1, MAX_FIGURE_BASE_SIZE), Random.nextInt(1, MAX_FIGURE_BASE_SIZE)
             )
         },
-        { Rectangle(it.getRandomColor(), Random.nextInt(MAX_FIGURE_BASE_SIZE), Random.nextInt(MAX_FIGURE_BASE_SIZE)) },
+        { Rectangle(it.getRandomColor(), Random.nextInt(1, MAX_FIGURE_BASE_SIZE), Random.nextInt(1, MAX_FIGURE_BASE_SIZE)) },
         {
             RightTriangle(
-                it.getRandomColor(), Random.nextInt(MAX_FIGURE_BASE_SIZE),
-                Random.nextInt(MAX_FIGURE_BASE_SIZE)
+                it.getRandomColor(), Random.nextInt(1, MAX_FIGURE_BASE_SIZE),
+                Random.nextInt(1, MAX_FIGURE_BASE_SIZE)
             )
         },
-        { Square(it.getRandomColor(), Random.nextInt(MAX_FIGURE_BASE_SIZE)) }
+        { Square(it.getRandomColor(), Random.nextInt(1, MAX_FIGURE_BASE_SIZE)) }
     )
 
     fun getRandomFigure(): Figure {

@@ -3,13 +3,14 @@ package mate.academy.model
 class Square(color: Color = Color.WHITE, private val leg: Int) : Figure(color) {
 
     override fun draw() {
-        println("Figure: right triangle, area:${calculateArea()}. units, "
-                + "firstLeg: $leg units, "
-                + "secondLeg: $leg units, "
-                + "color: $color")
+        println(
+            "Figure: square, area:${calculateArea()}. units, "
+                    + "leg: $leg units, "
+                    + "color: $color"
+        )
     }
 
-    override fun calculateArea(): Int {
-       return leg * leg
+    override fun calculateArea(): Double {
+        return (leg * leg).toDouble()
     }
 }

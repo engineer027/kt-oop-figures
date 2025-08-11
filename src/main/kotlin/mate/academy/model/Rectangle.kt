@@ -15,7 +15,7 @@ class Rectangle(
         )
     }
 
-    override fun calculateArea(): Int {
-        return height * width;
+    override fun calculateArea(): Double {
+        return (height * width).toDouble()
     }
 }

@@ -15,7 +15,7 @@ class RightTriangle(
         )
     }
 
-    override fun calculateArea(): Int {
-        return firstLeg * secondLeg / 2
+    override fun calculateArea(): Double {
+        return firstLeg * secondLeg / 2.0
     }
 }

@@ -17,7 +17,7 @@ class IsoscelesTrapezoid(
         )
     }
 
-    override fun calculateArea(): Int {
-        return (topBase + bottomBase) * height / 2;
+    override fun calculateArea(): Double {
+        return (topBase + bottomBase) * height / 2.0
     }
 }
